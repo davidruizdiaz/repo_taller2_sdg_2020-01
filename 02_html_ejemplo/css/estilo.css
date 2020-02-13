@@ -1,0 +1,126 @@
+/* selector de html */
+html{
+	/* color de fondo */
+	background: #ffe;
+	/* tipo de fuente */
+	font-family: helvetica;
+}
+
+body{
+	/* ancho con valor en porcentajes */
+	width: 80%;
+	/* margen externo */
+	margin: 0 auto;
+	/* borde izquierdo */
+	border-left: solid 1px grey;
+	/* borde derecho */
+	border-right: solid 1px grey;
+	/*sombra de caja*/
+	box-shadow: 0px 0px 8px grey;
+}
+
+main{
+	/*margen interno*/
+	padding: 1% 5%;
+}
+
+header{
+	background: #d6d6d6;
+	width: 100%;
+	/*forma en que se mostraran las cajas*/
+	display: inline-flex;
+	/*alineación vertica, solo funciona con flex*/
+	align-items: center;
+	box-shadow: 0px 0px 8px grey;
+}
+
+header img{
+	/*alture*/
+	height: 50px;
+	margin: 20px;
+}
+
+nav{
+	width: 100%;
+}
+
+/*selecciona todas las li que estan dentro de una ul que estan dentro de una nav*/
+nav ul li{
+	display: inline;
+	/*margen externo izquierdo*/
+	margin-left: 3%;
+}
+
+/*selecciona todas la a que estan dentro 
+de una li que estan dentro de una ul que estan
+dentro de una nav*/
+nav ul li a{
+	/*decoracion de texto para las anclas (subrayado)*/
+	text-decoration: none;
+	/*tamaño de fuente*/
+	font-size: 18px;
+	/*color de fuente*/
+	color:red;
+}
+
+footer{
+	height: 50px;
+	background: #d6d6d6;
+	font-size: 16px;
+	display: flex;
+	/*alineación horizontal, solo funciona con flex*/
+	justify-content: center;
+	align-items: center;
+}
+
+/*selector por clase*/
+.contenido{
+	width: 75%;
+	margin: 40px auto;
+	/*alineacion de texto*/
+	text-align: justify;
+}
+
+form{
+	width: 60%;
+	margin: 0 auto;
+	padding:30px 40px;
+	background: #d6d6d6;
+	/*borde redondeado*/
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px grey;
+}
+
+.form-item{
+	width: 95%;
+	margin: 3px 0;
+	height: 25px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 10px;
+	/*margen interno superior*/
+	padding-top: 3px;
+	/*margen interno inferior*/
+	padding-bottom: 3px;
+	font-size: 15px;
+}
+
+/*selecciona todos los textareas que tengan la clase form-item*/
+textarea.form-item{
+	height: auto;
+}
+
+.btn{
+	height: 35px;
+	border: none;
+	background: red;
+	color: white;
+	width: 98%;
+	font-size:18px;
+	border-radius: 3px;
+
+}
+.activado{
+	/*sombra de texto*/
+	text-shadow: 0px 1px 2px white, 0px 2px 2px black;
+}
