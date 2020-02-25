@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 2 - JQuery</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	
+	<header>
+		<h1>Calcula tu peso en otro planeta</h1>
+		<h2>No eres gordo, sólo estas en el planeta equivocado</h2>
+	</header>
+	
+	<section class="imagen">
+		<img src="img/marte.jpg" alt="">
+	</section>
+	
+	<section class="formulario">
+		
+		<label for="">Planeta: </label>
+		<select name="planetas" id="planetas">
+			<option value="">Seleccione una opción</option>
+			<option value="MER">Mercurio</option>
+			<option value="VEN">Venus</option>
+			<option value="MAR">Marte</option>
+			<option value="JUP">Júpiter</option>
+			<option value="SAT">Saturno</option>
+			<option value="URA">Urano</option>
+		</select> <br>
+
+		<label for="">Peso: </label>
+		<input type="number" id="peso"> <br>
+
+		<button>Calcular</button>
+
+	</section>
+	
+	<section class="resultado">
+		<p>
+			Tu peso en <span id="planetaSelec">xx</span> es: <span id="resul">00</span>kg.
+		</p>
+	</section>
+
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/app_2.js"></script>
+</body>
+</html>
