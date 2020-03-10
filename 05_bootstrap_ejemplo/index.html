@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 2 - JQuery</title>
+	<!-- link que enlaza al css de bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="container">
+	
+	<header class="jumbotron">
+		<h1 class="display-5">Calcula tu peso en otro planeta</h1>
+		<h2 class="lead text-right text-primary">No eres gordo, sólo estas en el planeta equivocado</h2>
+	</header>
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<section class="col-3">
+				<img src="img/marte.jpg" alt="" class="img-fluid img-thumbnail">
+			</section>
+			
+			<section class="col-9 card card-body">
+				
+				<div class="form-group row">
+					
+					<label for="" class="col-sm-2 col-form-label">Planeta:</label>
+
+					<div class="col-sm-10">
+						
+						<select class="form-control" name="planetas" id="planetas">
+							<option value="">Seleccione una opción</option>
+							<option value="MER">Mercurio</option>
+							<option value="VEN">Venus</option>
+							<option value="MAR">Marte</option>
+							<option value="JUP">Júpiter</option>
+							<option value="SAT">Saturno</option>
+							<option value="URA">Urano</option>
+							<option value="PUT">Plutón</option>
+						</select>
+						
+					</div>
+					
+				</div>
+
+				<div class="form-group row">
+					<label for="" class="col-sm-2 col-form-label">Peso:</label>
+					
+					<div class="col-sm-10">
+						<input class="form-control" type="number" id="peso">
+					</div>
+
+				</div>
+
+				<button class="btn btn-primary btn-block">Calcular</button>
+
+			</section>
+
+		</div>
+
+
+	</div>
+
+	
+	<section class="alert alert-primary text-center collapse">
+		
+			Tu peso en <span id="planetaSelec">xx</span> es: <span id="resul">00</span>kg.
+		
+	</section>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/app_2.js"></script>
+</body>
+</html>

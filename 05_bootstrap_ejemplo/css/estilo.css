@@ -1,0 +1,31 @@
+body{
+	background: #F6DEFF;
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+.imagen{
+	text-align: center;
+}
+
+img{
+	width: 20%;
+	border-radius: 3px;
+}
+.formulario{
+	width: 30%;
+	margin: 0 auto;
+	text-align: right;
+}
+.resultado{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5em;
+	background: #ccc;
+}
