@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es_PY">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de tareas</title>
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- font awensom  -->
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	
+	<div class="container">
+
+		<h3 class="text-center">Lista de tareas</h3>
+		
+		<hr>
+
+		<!-- formulario -->
+		<div class="row justify-content-center">
+
+			<div class="col">
+				<div class="card text-white bg-secondary mb-3">
+					
+					<div class="card-header">Agrega tus tareas</div>
+					
+					<div class="card-body">
+						
+						<div class="form-inline justify-content-center">
+							
+							<div class="input-group mr-sm-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fas fa-edit"></i>
+									</div>
+								</div>
+								<input type="text" class="form-control" id="descripcion" placeholder="Descripción">
+							</div>
+
+							<div class="input-group mr-sm-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fas fa-calendar-alt"></i>
+									</div>
+								</div>
+								<input type="date" class="form-control" id="fecha" placeholder="Fecha límite">
+							</div>
+
+							<div class="input-group mr-sm-2">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fas fa-hourglass-half"></i>
+									</div>
+								</div>
+								<input type="time" class="form-control" id="hora" placeholder="Hora">
+							</div>
+
+							<button type="button" class="btn btn-info" id="btn_agregar">
+								<i class="fas fa-plus-circle"></i>
+								Agregar tarea
+							</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<hr>
+		
+		<!-- Tabla -->
+		<div class="row justify-content-center">
+
+			<div class="col-10">
+
+				<div class="card bg-light mb-3">
+					<div class="card-header">Tareas pendientes</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th scope="col">Descripción</th>
+										<th scope="col">Fecha límite</th>
+										<th scope="col">Hora</th>
+										<th scope="col">Opciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+									 <tr>
+										<td>Hacer compras</td>
+										<td>2020-04-05</td>
+										<td>09:00</td>
+										<td>
+											<button type="button" onclick="" class="btn btn-sm btn-success" title="Completado">
+												<i class="fas fa-check-circle"></i>
+											</button>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- archivos javascript -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/tarea.js"></script>
+	<script src="js/controlador.js"></script>
+</body>
+</html>
